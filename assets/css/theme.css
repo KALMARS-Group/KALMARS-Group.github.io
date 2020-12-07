@@ -14391,11 +14391,11 @@ input.zinput-file[type='file'] {
 -----------------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #d0021b;
+  background-color: #005f89;
 }
 ::selection {
   color: #fff;
-  background-color: #d0021b;
+  background-color: #005f89;
 }
 
 body {
