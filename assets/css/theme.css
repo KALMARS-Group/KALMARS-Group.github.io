@@ -396,25 +396,25 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 9.878rem;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.display-2 {
   font-size: 7.427rem;
   font-weight: 900;
   line-height: 1;
 }
 
-.display-3 {
+.display-2 {
   font-size: 5.584rem;
   font-weight: 900;
   line-height: 1;
 }
 
+.display-3 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .display-4 {
-  font-size: 4.199rem;
+  font-size: 3.157rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -14000,7 +14000,7 @@ input.zinput-file[type='file'] {
 
 .progress-circle .progressbar-text .value {
   font-weight: 900;
-  font-size: 4.199rem;
+  font-size: 3.8rem;
 }
 
 .progress-circle .progressbar-text b {
@@ -16272,7 +16272,7 @@ button.bg-white:focus {
 }
 
 .fs-5 {
-  font-size: 4.199rem;
+  font-size: 3.8rem;
 }
 
 .fs-6 {
@@ -16307,7 +16307,7 @@ button.bg-white:focus {
     font-size: 3.157rem;
   }
   .fs-sm-5 {
-    font-size: 4.199rem;
+    font-size: 3.8rem;
   }
   .fs-sm-6 {
     font-size: 5.584rem;
@@ -16340,7 +16340,7 @@ button.bg-white:focus {
     font-size: 3.157rem;
   }
   .fs-md-5 {
-    font-size: 4.199rem;
+    font-size: 3.8rem;
   }
   .fs-md-6 {
     font-size: 5.584rem;
@@ -16373,7 +16373,7 @@ button.bg-white:focus {
     font-size: 3.157rem;
   }
   .fs-lg-5 {
-    font-size: 4.199rem;
+    font-size: 3.8rem;
   }
   .fs-lg-6 {
     font-size: 5.584rem;
@@ -16406,7 +16406,7 @@ button.bg-white:focus {
     font-size: 3.157rem;
   }
   .fs-xl-5 {
-    font-size: 4.199rem;
+    font-size: 3.8rem;
   }
   .fs-xl-6 {
     font-size: 5.584rem;
