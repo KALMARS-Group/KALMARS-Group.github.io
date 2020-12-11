@@ -13623,8 +13623,8 @@ input.zinput-file[type='file'] {
   left: 50%;
   height: 0.625rem;
   width: 0.625rem;
-  border-left: 2px solid #7F7F7F;
-  border-top: 2px solid #7F7F7F;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
   -webkit-transform: translateX(-50%) rotate(45deg);
   -ms-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg);
