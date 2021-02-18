@@ -1,0 +1,13 @@
+{
+    "name": "KALMARS",
+    "short_name": "KALMARS",
+    "icons": [
+        {
+            "src": "/assets/img/favicons/android-chrome-48x48.png?v=YA36Egvl4g",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}
