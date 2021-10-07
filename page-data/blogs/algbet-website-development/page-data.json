@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/blogs/algbet-website-development",
+    "result": {"data":{"allWpPost":{"nodes":[{"title":"ALG – website development","content":"\n<p>algbet.lv website development based on designer-provided mockup screens. Solution implementation is based on WordPress where content es editable for the website admin.</p>\n"}]}},"pageContext":{"slug":"algbet-website-development","title":"ALG – website development"}},
+    "staticQueryHashes": ["3159585216"]}

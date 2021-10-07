@@ -2,5 +2,9 @@
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
 User-agent: *
-Disallow: /assets/*
-Disallow: /assets
+Disallow: /img/*
+Disallow: /img
+Disallow: /models/*
+Disallow: /models
+Disallow: /fonts/*
+Disallow: /fonts

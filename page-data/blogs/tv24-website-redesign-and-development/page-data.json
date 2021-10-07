@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/blogs/tv24-website-redesign-and-development",
+    "result": {"data":{"allWpPost":{"nodes":[{"title":"TV24 – Website redesign and more feature implementation","content":"\n<p>TV24 website design development and implementation by creating a WordPress theme that is configurable and editable for site admin</p>\n\n\n\n<p>The first task was to improve the previus website design which was achieved with Figma platform by giving transparency of work progress to the client.</p>\n\n\n\n<p>After design approval with a client, we proceeded further with a website implementation. The custom development peace which we don&#8217;t face in every project is TV program implementation together with a nice, understandable UI design for end-user. Worth mentioning that we included a blog section in the website which is editable and customizable as all of the other sections.</p>\n"}]}},"pageContext":{"slug":"tv24-website-redesign-and-development","title":"TV24 – Website redesign and more feature implementation"}},
+    "staticQueryHashes": ["3159585216"]}
