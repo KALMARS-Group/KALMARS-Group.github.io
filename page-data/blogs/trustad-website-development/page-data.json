@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-post-js",
     "path": "/blogs/trustad-website-development",
     "result": {"data":{"allWpPost":{"nodes":[{"title":"TrustAD – Website development","content":"\n<p></p>\n\n\n\n<p>TrustAD website development based on client-provided design screens.  WordPress theme has been created to bring admins the option to edit any content block, spacings between sections, or change pictures</p>\n"}]}},"pageContext":{"slug":"trustad-website-development","title":"TrustAD – Website development"}},
-    "staticQueryHashes": ["3159585216"]}
+    "staticQueryHashes": ["2748212769","3159585216"]}

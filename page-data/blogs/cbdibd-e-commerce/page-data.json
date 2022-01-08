@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-post-js",
     "path": "/blogs/cbdibd-e-commerce",
     "result": {"data":{"allWpPost":{"nodes":[{"title":"CBDIBD – E-Commerce website development","content":"\n<p>E-commerce website development for CBDIBD project. Performed integrations with:</p>\n\n\n\n<ul><li>Omnivia</li><li>DPD</li><li>Paysera</li><li>Mailchimp</li></ul>\n\n\n\n<p>The solution is based on woocommerce.</p>\n"}]}},"pageContext":{"slug":"cbdibd-e-commerce","title":"CBDIBD – E-Commerce website development"}},
-    "staticQueryHashes": ["3159585216"]}
+    "staticQueryHashes": ["2748212769","3159585216"]}

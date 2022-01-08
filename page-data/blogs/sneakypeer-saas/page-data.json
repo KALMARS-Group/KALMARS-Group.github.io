@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-post-js",
     "path": "/blogs/sneakypeer-saas",
     "result": {"data":{"allWpPost":{"nodes":[{"title":"Sneakypeer – Full cycle SaaS development","content":"\n<p>Sneakypeer is one of the most complex projects which /KALMARS/ has developed. All development lifecycle has been covered trough out a year.</p>\n\n\n\n<p>All of the website design implementation and participation in customer design workshop sessions.</p>\n\n\n\n<p>The list of functionalities is listed below:</p>\n\n\n\n<p></p>\n\n\n\n<ul><li>Login and registration with verification</li><li>Ability to add news trought admin panel</li><li>Mutliple API connections to gather the data about P2P platforms</li><li>Data science to calculate platform scoring</li><li>Monitoring funcionality to paid users </li><li>Email </li><li>Custom payment checkout flow development by using STRIPE api</li><li>Admin panel which is based on Laravel framework</li></ul>\n\n\n\n<p></p>\n"}]}},"pageContext":{"slug":"sneakypeer-saas","title":"Sneakypeer – Full cycle SaaS development"}},
-    "staticQueryHashes": ["3159585216"]}
+    "staticQueryHashes": ["2748212769","3159585216"]}
