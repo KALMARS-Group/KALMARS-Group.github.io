@@ -1,0 +1,98 @@
+.css--upload-parent {
+    position: absolute;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(256, 256, 256, 0.5);
+    bottom:0;
+    transform:scale(0.2);
+    transition: all 0.5s;
+    left:0;
+    transform-origin: 0 100%;
+}
+#expandButton{
+    width: 64px;
+    height: 64px;
+
+}
+/* #expandButton img{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+} */
+.css--photo-preview {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.css--image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.css--svg {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+#flags {
+    float: left;
+    height: 100px;
+    width: 35px;
+    padding: 2px;
+    margin-right: 10px;
+    position: relative;
+}
+.flag{
+    width: 100px;
+    position: absolute !important;
+}
+.css--display-none {
+    display:none;
+}
+.info-panel{
+position: absolute;
+z-index: 2;
+/* background-color: white; */
+width: 100%;
+height: 2rem;
+user-select: none;
+}
+.expanded{
+    transform:scale(0.6);
+    bottom:0;
+    left:0;
+    transition: all 0.5s;
+}
+@media (min-width: 600px) {
+    .expanded {
+        transform:scale(0.8);
+
+    }
+}
+.expandedButton{
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+#room-now{
+    background-color: rgba(255,255,255,0.5);
+    padding-bottom:10px;
+}
+#compassContainer{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    color: black;
+    font-size: 2rem;
+    user-select: none;
+}
+#compass-middle{
+    gap: 10px;
+}

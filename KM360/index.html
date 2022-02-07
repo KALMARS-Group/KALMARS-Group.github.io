@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>360&deg; Image Gallery</title>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Image link template to be reused. -->
+    <script id="link" type="text/html">
+        <a-entity class="link"
+                  geometry="primitive: plane; height: 0.5; width: 0.5"
+                  material="shader: flat; src:assets/icons/impact-point-svgrepo-com.svg; side: double;"
+                  material-alpha-test
+                  rotation="0 0 0"
+                  id="${id}"
+                  event-set__mouseenter="scale: 1.2 1.2 1"
+                  event-set__mouseleave="scale: 1 1 1"
+                  sound="on: click; src: #click-sound">
+            <!-- event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
+            proxy-event="event: click; to: #image-360; as: fade" add these in iframe -->
+            <a-text id="${id}" color="#000" value="${name}" position="-0.7 0.6 0" rotation="0 0 0"></a-text>
+        </a-entity>
+    </script>
+    <script>
+        AFRAME.registerComponent('material-alpha-test', {
+            dependencies: ['material'],
+            init: function () {
+                this.el.getObject3D('mesh').material.alphaTest = 0.77;
+            }
+
+        });
+    </script>
+    <script>
+        AFRAME.registerComponent('rotation-reader', {
+            tick: function () {
+                let rotation = this.el.object3D.rotation.y * (180 / Math.PI)+45;
+
+                for (let i = 0; i <= 5; i++) {
+                    $("#pointerParent" + i).css({"transform": "rotate(" + -1 * rotation + "deg)"});
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="container-fluid" style="width:100vw;height:100vh;">
+    <div class="row w-100 h-100">
+        <div class="col-4" id="controlls">
+            <h4>Augšuplādē plānu</h4>
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg, .svg" onchange="encodeImageFileAsURL(this)">
+            <div class="row d-flex justify-content-center pt-4">
+                <div class="col-12">
+                    <h4>Cik punktus vēlies?</h4>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-6">
+                            <input class="btn btn-primary" type='button' value='Pievienot punktu' id='addButton'>
+                        </div>
+                        <div class="col-6">
+                            <input class="btn btn-danger" type='button' value='Noņemt punktu' id='removeButton'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center pt-4">
+                <h4>Sakonfigurē punktus</h4>
+                <div class="col-12" id="TextBoxesGroup">
+                    <div id="TextBoxDiv1" class="inputRow">
+                        <div class="modal fade" id="PanoModal1" tabindex="-1" role="dialog" aria-labelledby="PanoModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="PanoModalLabel1">Panorāmas pievienošana</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+
+                                    <div class="modal-body row">
+                                        <div class="col-6"><input id="room-name1" type="text" placeholder="Nosaukums"></div>
+                                        <div class="col-6"><input id="room-size1" type="number" placeholder="Platība"></div>
+                                        <div class="col-12 d-flex justify-content-center"><p class="pe-5">Ievieto panorāmu</p><input type="file" id="panorama1" accept=".png, .jpg, .jpeg, .svg" onchange="encodeImageFileAsURL(this)"></div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aizvērt</button>
+                                        <button class="btn btn-primary" id="addCircle1">Pievienot punktu</button>
+                                        <button class="btn btn-danger" id="removeCircle1">Izdzēst punktu</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PanoModal1">
+                                    Punkta Nr.1 konfigurācija
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-4">
+                    <button class="btn btn-primary" onclick="createJSON()">Izveidot JSON</button>
+                </div>
+            </div>
+            <!-- <div>Telpa:<span id="room-now"></span></div> -->
+            <div class="css--upload-parent mx-auto drag-area">
+                <div class="css--photo-preview map-image">
+                    <div id="imagePreview" class="css--image" style="background-image: url();">
+                        <div id="flags">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="final.html">Go to final</a>
+        </div>
+        <div class="col-8">
+            <a-scene vr-mode-ui=false embedded do-something-once-loaded cursor="rayOrigin:mouse">
+                <div class="container info-panel">Telpa:<span id="room-now"></span></div>
+                <a-assets>
+                    <!-- <img id="Ofice1" crossorigin="anonymous" src="Ofice1.jpeg">
+                    <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg"> -->
+                    <img id="up-arrow" alpha-test crossorigin="anonymous" src="dry-clean.png">
+                    <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+                    <!-- <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg"> -->
+                    <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+                    <!-- <img id="Ofice2" crossorigin="anonymous" src="Ofice2.jpeg">
+                    <img id="Ofice3" crossorigin="anonymous" src="Ofice3.jpeg"> -->
+                </a-assets>
+                <!-- 360-degree image. -->
+                <a-sky b id="image-360" radius="50" src="Ofice1.jpeg"
+                       sound="on: change; src: #click-sound"
+                       animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+                       animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
+                       animation__custom="property: material.color; from:#FFF;to:#000; startEvents:change; dur:300;"
+                       animation__2="property: material.color; from:#000;to:#FFF; startEvents: animationcomplete__custom; dur:300;"
+                ></a-sky>
+                <!-- Camera + cursor. -->
+                <a-entity id="camera-el" camera look-controls mouse-cursor rotation-reader north-reader>
+                    <a-cursor
+                            id="cursor"
+                            animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+                            animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+                            event-set__mouseenter="_event: mouseenter; color: springgreen"
+                            event-set__mouseleave="_event: mouseleave; color: black"
+                            visible="false"
+                            raycaster="objects: .link">
+                    </a-cursor>
+                </a-entity>
+                <div class="north-button"><button id="compass-set-button" class="btn btn-primary">Set North</button> </div>
+            </a-scene>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

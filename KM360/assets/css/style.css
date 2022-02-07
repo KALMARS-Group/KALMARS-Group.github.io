@@ -1,0 +1,68 @@
+.css--upload-parent {
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.css--photo-preview {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.css--image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.css--svg {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+#flags {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin:-8px;
+    position: relative;
+}
+.css--display-none {
+    display:none;
+}
+.info-panel{
+position: absolute;
+z-index: 2;
+background-color: white;
+width: 100%;
+height: 2rem;
+user-select: none;
+}
+.flag {
+    width: 100px;
+    position: absolute !important;
+}
+.css--pointer-number {
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+    pointer-events: none;
+}
+.north-button {
+    position: absolute;
+    bottom:50%;
+    z-index: 1;
+}
