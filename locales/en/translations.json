@@ -43,11 +43,17 @@
     "web_dev": "Web Development",
     "kyc_aml": "KYC/AML",
     "design": "Graphic Design",
-    "call_us": "Call Us",
+    "call_us": "Phone",
     "visit_us": "Visit Us",
-    "email_us": "Email Us",
+    "email_us": "Email",
     "company": "Company",
     "bank": "Bank",
-    "adress": "Address"
+    "adress": "Address",
+    "outsourcing_title": "Scalability Comes From Outsourcing Your IT Needs to Expert Team",
+    "outsourcing_subtitle": "We give guarentees.",
+    "outsourcing_button": "Explore outsourcing models",
+    "outsourcing_bonuses_title_one": "You will receive",
+    "outsourcing_bonuses_title_two": "Bonuses & guarantees",
+    "outsourcing_models_title": "We have flexible outsourcing models"
 }
 
