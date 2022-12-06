@@ -11,11 +11,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kalmars.lv/our-partners/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://kalmars.lv/portfolio/</loc>
     <lastmod>2022-02-07T17:33:54+00:00</lastmod>
     <priority>0.80</priority>
@@ -36,7 +31,12 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://kalmars.lv/our-partners/uon-cloud/</loc>
+    <loc>https://kalmars.lv/partners/uon-cloud/</loc>
+    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://kalmars.lv/partners/progress-it/</loc>
     <lastmod>2022-02-07T17:33:54+00:00</lastmod>
     <priority>0.64</priority>
   </url>
