@@ -1,4 +1,13 @@
 User-agent: *
-Allow: /
-
+Disallow:
+Crawl-delay: 5
+Disallow: /img
+Disallow: /img/
+Disallow: /img/*
+Disallow: /models
+Disallow: /models/
+Disallow: /models/*
+Disallow: /fonts
+Disallow: /fonts/
+Disallow: /fonts/*
 Sitemap: https://kalmars.lv/sitemap.xml
