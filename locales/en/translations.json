@@ -9,6 +9,7 @@
     "about_description": "We are a software development company and we have built multiple digital products for our customers and for ourselves. We have experience in developing tailored solutions to meet client requirements in a short amount of time. Moreover, we would like to point out that we have done it by using various technologies and approaches which shows our flexibility and skill set.",
     "portfolio": "Portfolio",
     "blogs": "Blogs",
+    "blogs_subtitle": "Everything you need to know about IT industry at one place.",
     "career": "Career",
     "contact_us": "Contact us",
     "what_we_do": "What we do",
@@ -43,11 +44,12 @@
     "web_dev": "Web Development",
     "kyc_aml": "KYC/AML",
     "design": "Graphic Design",
-    "call_us": "Call Us",
+    "call_us": "Phone",
     "visit_us": "Visit Us",
-    "email_us": "Email Us",
+    "email_us": "Email",
     "company": "Company",
     "bank": "Bank",
-    "adress": "Address"
+    "adress": "Address",
+    "outsourcing_title": "Scalability Comes From Outsourcing Your IT Needs to Expert Team"
 }
 
