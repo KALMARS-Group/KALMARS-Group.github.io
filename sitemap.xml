@@ -1,88 +1,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-  <url>
-    <loc>https://kalmars.lv/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/about-us/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/blogs/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/career/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/contact-us/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/partners/uon-cloud/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/partners/progress-it/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/cbdibd-e-commerce/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/algbet-website-development/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/trustad-website-development/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/restauratori-educational-hidden-object-game/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/sneakypeer-saas/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/tv24-website-redesign-and-development/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/portfolio/csgo-website-development/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/blogs/kalmars-opened-e-commerce-shop/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://kalmars.lv/blogs/what-is-an-api/</loc>
-    <lastmod>2022-02-07T17:33:54+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
+<script/>
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://kalmars.lv/</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://kalmars.lv/about-us</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://kalmars.lv/portfolio</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://kalmars.lv/contact-us</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://kalmars.lv/frontend-development</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://kalmars.lv/mobile-development</loc>
+<lastmod>2024-05-10T07:47:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>

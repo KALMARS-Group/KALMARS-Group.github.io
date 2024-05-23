@@ -1,4 +1,7 @@
 User-agent: *
-Allow: /
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow: /about-us/
 
 Sitemap: https://kalmars.lv/sitemap.xml
